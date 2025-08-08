@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+venv/
+ENV/
+env/
+*.sqlite3
+
+# VS Code
+.vscode/
+
+# Streamlit
+.streamlit/
+
+# ChromaDB
+db/chroma/
+
+# Resume uploads
+data/resumes/
+
+# OS files
+.DS_Store
+Thumbs.db
