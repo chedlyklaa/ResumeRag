@@ -16,7 +16,8 @@ def get_rag_chain():
     retriever = db.as_retriever()
 
     # Gemini (Google Generative AI) - requires API key
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
+    # pick a model that the API reported as supporting chat/generateMessage or generateContent
+    llm = ChatGoogleGenerativeAI(model="models/gemini-2.5-flash")
 
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
